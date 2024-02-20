@@ -1,0 +1,84 @@
+token: ""
+ownerId: ""
+supportChannelId: ""
+transcriptChannelId: ""
+priorityRoleId: ""
+sendTranscriptToUser: false
+
+ticketTypes: 
+  - name: "General Inquiry"
+    description: "Use this ticket for general questions."
+    emoji: "🧐"
+    supportRoleIds: ["", ""]
+    mentionRoleIds: [""]
+    category: ""
+  - name: "Technical Support"
+    description: "For technical issues or support."
+    emoji: "🔧"
+    supportRoleIds: [""]
+    mentionRoleIds: ["", ""]
+    category: ""
+
+placeholder: "Select a ticket type" 
+ticketEmbed:
+  title: "Ticket Support"
+  description:
+    - "Click on the menu below to open a ticket."
+    - "Our team will assist you shortly!"
+    - "Misuse of this function will be penalized."
+  color: 0x3498DB
+  timestamp: true
+  imageUrl: "../images/ticket.png"
+
+
+initialTicketEmbed:
+  footer: "  "
+  welcomeText:
+    - "Willkommen {{user}},"
+    - ""
+    - "Unser Team wird dir gleich helfen!"
+  color: 0x3498DB
+
+
+buttons:
+  close:
+    label: "Close Ticket"
+    style: "Danger"
+    emoji: "🔒"
+  claim:
+    label: "Claim Ticket"
+    style: "Success"
+    emoji: "✋"
+
+giveaway:
+  questions:
+    channel: "On which channel would you like to publish the giveaway?"
+    title: "What is the title of the giveaway?"
+    description: "What is the description of the giveaway?"
+    duration: "How long will the giveaway last? (example: 60s, 24h, 7d)"
+    thumbnail: "Do you want to add a Thumbnail? Send the image or reply 'No'."
+    image: "Do you want to add an image? Send the image or reply 'No'."
+  giveawayEmbed:
+    color: 0xFFFF00
+    footer: "React to participate in the giveaway!"
+  noParticipantsMessage: "There were no participants for the giveaway."
+  winnerAnnouncement: "Congratulations {winner}! You have won the giveaway."
+    
+changelog:
+  color: 0xFFFF00
+  channelId: ""
+  title: "Changelog Title"
+  footer: "All rights reserved."
+  imageUrl: "./images/welcome.png"
+  thumbnailUrl: "./images/ticket.png"
+  questions:
+    added: "What was added new? (Write 'No' to omit)"
+    changed: "What was changed? (Write 'No' to omit)"
+    date: "Date of changes? (format DD/MM/YY)"
+    overheads: "What are the improvements? (Write 'No' to omit)"
+    signature: "Who signs? (Write 'No' to omit)"
+  sections:
+    added: "[+] ADDED"
+    changed: "[/] CHANGED"
+    overheads: "[-] OVERHEADS"
+    signature: "SIGNATURE"
